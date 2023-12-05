@@ -14,6 +14,11 @@ public class Geo {
         System.out.println(p3.distance(p1));
         System.out.println(p2.distance(p3));
 
+        Rectangulo r1 = new Rectangulo(p1,p2);
+        System.out.println(r1);
+        r1.moveUp(13);
+        System.out.println(r1);
+        System.out.println(r1.perimetro());
 
     }
 }
