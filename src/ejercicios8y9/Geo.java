@@ -1,4 +1,4 @@
-package geometria;
+package ejercicios8y9;
 
 public class Geo {
     public static void main(String[] args) {
@@ -19,6 +19,14 @@ public class Geo {
         r1.moveUp(13);
         System.out.println(r1);
         System.out.println(r1.perimetro());
+
+        Segmento s1 = new Segmento(p1, p2);
+        System.out.println(s1);
+        s1.getP1().moveUp(5);
+        s1.getP2().moveLeft(6);
+        System.out.println(s1);
+        s1.moveRight(10);
+        System.out.println(s1);
 
     }
 }

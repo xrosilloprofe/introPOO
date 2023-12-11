@@ -1,4 +1,4 @@
-package geometria;
+package ejercicios8y9;
 
 public class Rectangulo {
 

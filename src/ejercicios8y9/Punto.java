@@ -1,5 +1,11 @@
-package geometria;
+package ejercicios8y9;
 
+/**
+ * Ejercicio 8. Crea una clase Punto que permita representar un punto en el eje XY.
+ * La clase deberá tener un constructor parametrizado, así como el constructor por defecto.
+ * Por otro lado, sobrescribe el método toString() para poder representar un punto de la forma (x,y).
+ * Deberemos añadir la posibilidad de desplazar el punto por el plano.
+ */
 public class Punto {
     //ATTRIBUTES
     private int x;

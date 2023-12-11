@@ -1,4 +1,4 @@
-package ejercicio1y2;
+package ejercicios1y2;
 
 public class Tarjeta {
     private static final String TIPO_TARJETA = "542397";

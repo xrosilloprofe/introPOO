@@ -1,4 +1,4 @@
-package ejercicio1y2;
+package ejercicios1y2;
 
 public class BancoTester {
     public static void main(String[] args) {
