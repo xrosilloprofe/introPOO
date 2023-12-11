@@ -12,8 +12,8 @@ import java.util.List;
  * Para comprobar el correcto funcionamiento, deberás sobrescribir el método toString() para visualizar el estado de la baraja.
  */
 public class Baraja {
-    Carta[] baraja;
-    String[] palos = {"COPAS", "ESPADAS", "BASTOS", "OROS"};
+    private Carta[] baraja;
+    private final String[] palos = {"COPAS", "ESPADAS", "BASTOS", "OROS"};
 
     public Baraja() {
         baraja = new Carta[12 * 4];

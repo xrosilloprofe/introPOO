@@ -85,4 +85,10 @@ public class Fraccion {
         return numerador + "/" + denominador;
     }
 
+    public static Fraccion multiplicaS(Fraccion f1, Fraccion f2){
+        int nume = f1.getNumerador() * f2.getNumerador();
+        int deno = f1.getDenominador()*f2.getDenominador();
+        return simplificarFracciones(new Fraccion(nume,deno));
+    }
+
 }

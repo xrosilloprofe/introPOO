@@ -9,6 +9,13 @@ public class Main {
         System.out.println(miIbiza.getMarca());
         System.out.println(miToyota.getMatricula());
         System.out.println("Marchas: " + miBmw.getNumMarchas());
+        Taller t1 = new Taller("Taller IBIZAS");
+        t1.cambioColor("rojo", miIbiza);
+        System.out.println(miIbiza);
+        t1.addVehiculo(miIbiza,miBmw);
+        t1.addVehiculo(miToyota);
+        System.out.println(t1);
+
 
         for (int i = 0; i < 6; i++) {
             miIbiza.subirMarcha();

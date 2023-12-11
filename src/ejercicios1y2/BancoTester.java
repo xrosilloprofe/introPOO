@@ -5,6 +5,7 @@ public class BancoTester {
         Cuenta c1 = new Cuenta("Cristóbal");
         Cuenta c2 = new Cuenta("Juan Carlos",0);
         Cuenta c3 = new Cuenta("Ian");
+        System.out.println(c1.getTitular());
 
         c1.ingreso(1000);
         c1.transferencia(1,c2);

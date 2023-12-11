@@ -2,6 +2,7 @@ package ejercicio3;
 
 public class Contador {
     private int cont;
+    public static final int MAX_VALUE=10;
 
     public Contador(){
         this.cont=0;
@@ -16,7 +17,10 @@ public class Contador {
     }
 
     public void setCont(int cont){
-        this.cont = cont;
+        if(cont>MAX_VALUE)
+            this.cont = MAX_VALUE;
+        else
+            this.cont = cont;
     }
 
     public void incrementa(){

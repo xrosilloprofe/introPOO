@@ -21,7 +21,7 @@ public class Cuenta {
     }
 
     public double getSaldo(){ return saldo;}
-    public String getTitular(){ return titular;}
+    String getTitular(){ return titular;}
     public String getNumCuenta(){return numCuenta;}
     public void setTitular(String titular){
         this.titular=titular;
