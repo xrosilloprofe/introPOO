@@ -47,6 +47,26 @@ public class Tarjeta {
         this.limite=limite;
     }
 
+    public boolean pagoDebito(double importe){
+        return cuentaAsociada.reintegro(importe);
+    }
+
+    public boolean pagoCredito(double importe){
+        if(importe>0 && (limite-saldo)>=importe){
+            saldo+=importe;
+            return true;
+        }
+        return false;
+    }
+
+    public boolean liquidacion(){
+        if(cuentaAsociada.reintegro(saldo)){
+            saldo = 0;
+            return true;
+        }
+        return false;
+    }
+
 
     @Override
     public String toString(){
